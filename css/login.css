@@ -6,7 +6,7 @@ body{
     
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background: url(img/R.jpg);
+    background: url(../img/R.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;/*se puede usar cover*/
