@@ -73,6 +73,8 @@ li>div>div{
     color: #000;
     border: 1px solid black;
     padding: 40px;
+    /* color */
+    background-color: rgb(121, 121, 123);
 }
 img{
     width: 50%;
