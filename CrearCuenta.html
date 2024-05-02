@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="./css/CrearCuenta.css">
+    <title>Crear Cunenta</title>
 </head>
 <body>
     <!-- INICIO DE MENU -->
@@ -21,7 +21,7 @@
                     <div>
                         <h2>Quienes Somos</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae eligendi, possimus minima ducimus quos est quasi reiciendis debitis esse quaerat sunt perferendis inventore ipsam tempora rem consequuntur, enim, molestiae provident?</p>
-                        <img src="../Ejemplo_OVERLAY/img/3.jpeg" alt="">
+                        <img src="./Ejemplo_OVERLAY/img/3.jpeg" alt="">
                     </div>
                 </div>
             </li>
@@ -31,7 +31,7 @@
                     <div>
                         <h2>Juegos / Expansiones</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae eligendi, possimus minima ducimus quos est quasi reiciendis debitis esse quaerat sunt perferendis inventore ipsam tempora rem consequuntur, enim, molestiae provident?</p>
-                        <img src="../Ejemplo_OVERLAY/img/3.jpeg" alt="">
+                        <img src="./Ejemplo_OVERLAY/img/3.jpeg" alt="">
                     </div>
                 </div>
             </li>
@@ -41,7 +41,7 @@
                     <div>
                         <h2>Productos</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae eligendi, possimus minima ducimus quos est quasi reiciendis debitis esse quaerat sunt perferendis inventore ipsam tempora rem consequuntur, enim, molestiae provident?</p>
-                        <img src="../Ejemplo_OVERLAY/img/4.avif" alt="">
+                        <img src="./Ejemplo_OVERLAY/img/4.avif" alt="">
                     </div>
                 </div>
             </li>
@@ -67,34 +67,32 @@
             </li>
         </ul>
     </nav>
-    
+    <!-- FIN DE MENU -->
+
     <form class="formulario">
-
-        <h1>Login Usuario</h1>
+        <h1>Registro de Usuario</h1>
         <div class="contenedor">
-           
-            
             <div class="input-contenedor">
-                <img  class="icon_cuenta" src="icon/icono_correo.png"/>
-                <input type="text" placeholder="Correo electrónico">
+                <img class="icon" src="icon/usuario.png">
+                
+                <input type="text" placeholder="Nombre de Usuario">
             </div>
-
             <div class="input-contenedor">
-                <img  class="icon_cuenta" src="icon/icons8-password-50.png"/>
+                <img class="icon" src="icon/correo.png">
+                <input type="mail" placeholder="correo Eletronico">
+            </div>
+            <div class="input-contenedor">
+                <img class="icon" src="icon/password.png">
                 <input type="password" placeholder="Contraseña">
             </div>
-            <input type="submit" value="Login" class="button">
-            <p>Al registrarse, acepta nuestras condiciones de uso y política de privacidad</p>
-            <p>¿No tienes cuenta? <a class="link" href="CrearCuenta.html">Registrarse</a></p>
-
+            <input type="submit" value="Registro" class="button">
+            <p>Al registrarse, aceota nuestras condiciones de uso y politicas de privacidad</p>
+            <p>
+                ¿Ya tienes una cuenta?
+                <a class="link" href="login.html">Iniciar Sesion</a>
+            </p>
         </div>
-
-
-
     </form>
-
-
-
 
 </body>
 </html>
