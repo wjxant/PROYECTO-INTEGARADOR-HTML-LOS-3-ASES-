@@ -55,3 +55,8 @@ img{
     height: 50%;
     object-fit: cover;
 }
+.logo_img{
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
