@@ -19,6 +19,7 @@ nav{
     /* poner en bloque y poner en horiozontal */
     display: inline-block;
     position: relative;
+    border-radius: 0px 0px 20px 20px;
 }
 li{
     /* poner en bloque y poner en horiozontal */
@@ -33,6 +34,9 @@ li:hover>div{
 }
 li:hover a{
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    position: relative;
+    
 }
 nav li a{
     display: inline-block;
@@ -52,7 +56,7 @@ li>div>div{
     border: 1px solid black;
     padding: 40px;
     /* color */
-    background-color: rgb(121, 121, 123);
+    background-color: rgb(121, 121, 123, 0.5);
 }
 img{
     width: 50%;
@@ -64,3 +68,5 @@ img{
     height: 55px;
     position: relative;
     top: 20px;
+    border-radius: 20px;
+}
