@@ -13,6 +13,7 @@ body{
     background-size: 100% 100%;/*se puede usar cover*/
 
 }
+/* INICIO DE MENU  */
 html, body{
     height: 100%;
 }
@@ -73,6 +74,7 @@ li>div>div{
     top: 20px;
 
 }
+/* FIN DE MENU  */
 .contenedor{
     width:100% ;
     padding: 15px;

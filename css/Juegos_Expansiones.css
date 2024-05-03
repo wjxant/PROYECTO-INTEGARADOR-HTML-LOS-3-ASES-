@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* INICIO MENU  */
 html, body{
     height: 100%;
 }
@@ -67,4 +68,5 @@ img{
     position: relative;
     top: 20px;
 }
+/* FIN DE MENU  */
 
