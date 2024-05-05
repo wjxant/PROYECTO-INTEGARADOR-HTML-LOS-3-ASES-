@@ -10,9 +10,10 @@ body{
     background: url(../img/R.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;/*se puede usar cover*/
+    background-size: 100% 100%;/se puede usar cover/
 
 }
+
 /* INICIO DE MENU  */
 html, body{
     height: 100%;
@@ -26,10 +27,11 @@ a{
     text-decoration: none;
 }
 nav{
+    text-align: center;
     background-color: gray;
     color: #fff;
     /* poner en bloque y poner en horiozontal */
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
     border-radius: 0px 0px 20px 20px;
 }
@@ -144,5 +146,3 @@ p{
         border-radius: 2%;
     }
 }
-
-

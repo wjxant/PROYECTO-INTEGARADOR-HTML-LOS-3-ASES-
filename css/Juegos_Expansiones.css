@@ -15,11 +15,13 @@ a{
     text-decoration: none;
 }
 nav{
+    text-align: center;  
     background-color: gray;
     color: #fff;
     /* poner en bloque y poner en horiozontal */
-    display: inline-block;
-    position: relative;
+    /* display: inline-block;   */
+    position:relative;  
+    
     border-radius: 0px 0px 20px 20px;
 }
 li{
@@ -70,3 +72,91 @@ img{
 }
 /* FIN DE MENU  */
 
+main {
+    background-color: rgb(83, 80, 76);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section {
+    width: 100%;
+}
+
+section.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.images img {
+    height: 100px;
+    width: 25%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* /Pequeños resteos/ */
+
+h1,
+h3,
+h4,
+p {
+    margin: 0px;
+    padding: 10px;
+}
+
+
+
+
+/* Cambiamos el color de letra de ciertos elementos */
+
+.rojo {
+    color: #fff;
+}
+
+
+/* Contenedor General */
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+    width: 90%;
+}
+
+
+/* Parte del logo y del menu*/
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_item {
+    padding: 0.5em;
+    display: none;
+}
+@media screen and (min-width:576px) {
+    nav{
+        display: flex;
+    }
+    .menu_item{
+        display: inline-block;/* para poder loner elementos en linea en bloque y poder poner de vertical en horizontal */
+    }
+    .icon{
+        display: none;
+    }
+    .novedades{
+        width: 25%;
+    }
+    section.main_text, section.images{
+        width: 50%;
+    }
+    section.images img{
+        width: 50%;
+        height: 25%;
+    }
+}

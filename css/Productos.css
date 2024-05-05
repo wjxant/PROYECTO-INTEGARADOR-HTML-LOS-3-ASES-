@@ -11,7 +11,7 @@ html, body{
 body{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: aqua;
+    background-color: rgb(73, 74, 74);
     background-image: url(img/fondo1.jpg);
     background-size: 100%;
 }
@@ -20,10 +20,11 @@ a{
     text-decoration: none;
 }
 nav{
+    text-align: center;
     background-color: gray;
     color: #fff;
     /* poner en bloque y poner en horiozontal */
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
     border-radius: 0px 0px 20px 20px;
 }
@@ -79,18 +80,18 @@ h1{
     text-align: center;
     font-size: 80px;
     color: rgb(181, 160, 160)
-    /*insertar tipografias de la web*/
+    /* /insertar tipografias de la web/ */
     
 }
 .container_cards{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
-    /*Sea flexibles, para que la pagina web sea flexibles, y aparte tenemos que decir como va ser la pantalla*/
+    /* /Sea flexibles, para que la pagina web sea flexibles, y aparte tenemos que decir como va ser la pantalla/ */
     display: flex;
-    /*Acordeon, se va ajustando con las anchuras*/
+    /* /Acordeon, se va ajustando con las anchuras/ */
     flex-wrap: wrap;
-    /*tenemos que justifir y centralizado*/
+    /* /tenemos que justifir y centralizado/ */
     justify-content: center;
 }
 .card{
@@ -105,7 +106,7 @@ h1{
     width: 100%;
     height: 250px;
     position: relative;
-    /*Ocultar elemento*/
+    /* /Ocultar elemento/ */
     overflow: hidden;
 }
 .card .cover img{
@@ -164,14 +165,14 @@ puede ser p, img, videos, etc., en funcion de su posicion y los situaciones entr
 }
 .card .description h2{
     margin-top: 10px;
-    /*insertar Tipografias*/
+    /* /insertar Tipografias/ */
     font-family: "Bebas Neue", sans-serif;;
 }
 .card .description p{
     margin-top: 10px;
     text-align: justify;
 }
-/*Modificando el boton*/
+/* /Modificando el boton/ */
 .card .description input{
     padding: 10px 40px;
     margin: 20px auto 0 auto;
@@ -188,5 +189,5 @@ puede ser p, img, videos, etc., en funcion de su posicion y los situaciones entr
     background: #C79DC3;
 }
 .card .description a{
-    text-decoration: none;
+    text-decoration: none;
 }
