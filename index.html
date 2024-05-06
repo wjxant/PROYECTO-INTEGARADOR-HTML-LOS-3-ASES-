@@ -36,8 +36,7 @@
                 
             </li>
             <li>
-                <div class="icono">
-                <img src="icon/icons8-me-58.png" alt=""><a href="login.html">Login</a>
+                <a href="login.html"><img src="icon/login.png" alt="" class="logo_img"></a>
             </div>
 
 
@@ -60,16 +59,20 @@
     </div> -->
 
     <div class="videoPrincipal">
-        <video src="" autoplay></video>
-        <div class="txtVideo">
-            <h1>Bienvenidos a Los 3 Ases</h1>
-            <h2>Descarga para unir Al Mundo</h2>
-
+        <video id="videoTrailer" autoplay loop muted controls>
+            <source src="video/VideoTrailer.webm" type="video/mp4">
+        </video>
+        <div class="infoIndex">
+            <div class="txtVideo">
+                <h1>Bienvenidos a Los 3 Ases</h1>
+                <h2>Descarga para unir Al Mundo</h2>
+            </div>
+            <div class="descargar">
+                <a href="CrearCuenta.html" id="descargar">DESCARGAR</a>
+                <a href="CrearCuenta.html"  class="button">Registrate</a>
+            </div>
         </div>
-        <div class="descargar">
-            <a href="CrearCuenta.html"  class="button">DESCARGAR</a>
-            <a href="CrearCuenta.html"  class="button">Registrate</a>
-        </div>
+        <div id="separadorVideTrailer"></div>
     </div>
 </body>
 </html>
