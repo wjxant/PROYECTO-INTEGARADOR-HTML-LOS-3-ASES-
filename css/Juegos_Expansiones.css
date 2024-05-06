@@ -122,7 +122,7 @@ p {
 
 .container {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 20px auto;
+    margin: 10px auto;
     width: 90%;
 }
 
@@ -157,6 +157,7 @@ header {
     }
     section.images img{
         width: 50%;
-        height: 25%;
+        height: auto;
+       
     }
 }
