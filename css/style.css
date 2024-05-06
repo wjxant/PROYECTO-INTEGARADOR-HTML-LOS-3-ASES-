@@ -21,6 +21,9 @@ nav{
     display: inline-block;
     position: relative;
     border-radius: 0px 0px 20px 20px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 li{
     /* poner en bloque y poner en horiozontal */
