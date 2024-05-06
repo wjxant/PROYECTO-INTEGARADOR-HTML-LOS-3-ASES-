@@ -62,6 +62,10 @@ li>div>div{
     /* color */
     background-color: rgb(121, 121, 123, 0.5);
 }
+.icono{
+    display: block;
+    margin: auto;
+}
 img{
     width: 50%;
     height: 50%;
@@ -75,6 +79,33 @@ img{
     border-radius: 20px;
 }
 /* FIN DE MENU  */
+
+/* INDEX */
+
+/* Carousel */
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Ocultar la barra de desplazamiento en navegadores que lo soporten */
+    -ms-overflow-style: none; /* Ocultar la barra de desplazamiento en IE y Edge */
+} 
+.carousel::-webkit-scrollbar {
+display: none; /* Ocultar la barra de desplazamiento en navegadores basados en WebKit */
+}
+.carousel-inner {
+display: flex;
+scroll-snap-type: x mandatory;
+}
+.carousel img {
+flex: 0 0 auto;
+width: 100%;
+scroll-snap-align: start;
+}
+
+.videoPrincipal>.descargar{
+    margin-top: 40px;
+}
 
 
 /* quienes somos */
@@ -92,6 +123,22 @@ footer {
 
 
 /* productos */
+.titulo_producto{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(181, 160, 160)
+    /*insertar tipografias de la web*/
+    
+
+}
+
+.img_productos{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0px 0px;
+}
+
 h1{
     margin-top: 50px;
     text-align: center;
@@ -103,7 +150,6 @@ h1{
 .container_cards{
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
     /*Sea flexibles, para que la pagina web sea flexibles, y aparte tenemos que decir como va ser la pantalla*/
     display: flex;
     /*Acordeon, se va ajustando con las anchuras*/
@@ -115,6 +161,11 @@ h1{
     width: 300px;
     margin: 10px;
     transition: all ease 300ms;
+    border-radius: 20px;
+
+}
+.container_cards>.card{
+    margin-bottom: 220px;
 }
 .card:hover{
     width: 350px;
@@ -153,19 +204,31 @@ h1{
 /*Pseudoclase: nth-of-type() en CSS, selecciona uno o mas elementos de un tipo dado,
 puede ser p, img, videos, etc., en funcion de su posicion y los situaciones entre un grupo de hermanos*/
 .card:nth-of-type(1) .img_back{
-    background-image: url(img/fondouno.avif);
+    background-image: url(img/Producto1.jpeg);
 }
 .card:nth-of-type(2) .img_back{
-    background-image: url(img/fondodos.jpg);
+    background-image: url(img/Producto2.jpg);
 }
 .card:nth-of-type(3) .img_back{
-    background-image: url(img/fondotres.webp);
+    background-image: url(img/Producto3.jpg);
 }
 .card:nth-of-type(4) .img_back{
-    background-image: url(img/fondocuatro.webp);
+    background-image: url(img/Producto4.jpg);
 }
 .card:nth-of-type(5) .img_back{
-    background-image: url(img/fondocinco.webp);
+    background-image: url(img/Producto5.jpeg);
+}
+.card:nth-of-type(6) .img_back{
+    background-image: url(img/Producto6.jpg);
+}
+.card:nth-of-type(7) .img_back{
+    background-image: url(img/Producto7.jpg);
+}
+.card:nth-of-type(8) .img_back{
+    background-image: url(img/Producto8.jpg);
+}
+.card:nth-of-type(9) .img_back{
+    background-image: url(img/Producto9.jpg);
 }
 .card:hover .img_back{
     bottom: -40px;
@@ -253,13 +316,17 @@ body{
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0px 5px 10px #000;
 }
-.card .front img{
+.card .front img {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    /*Indica cómo el contenido de un elemento deberá ser redimensionado 
-    para ajustarse a su contenedor*/
-    object-fit: cover;
+    width: auto;
+    height: auto; 
+    max-width: 70%; 
+    max-height: 100%; 
+    top: 0;  
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
 }
 .card .front h3{
     position: absolute;
@@ -312,7 +379,7 @@ body{
 
 .contenedor{
     width:100% ;
-    padding: 15px;
+    padding: 60px;
 
 }
 .formulario{
@@ -348,14 +415,20 @@ input[type="text"], input[type="password"]{
 }
 .button{
     border: none;
-    width: 100%;
-    font-size: 24px;
+    width: 90%;
+    font-size: 20px;
     color: white;
     background-color: black;
-    padding: 15px 20px;
-    border-radius: 5px;
+    padding: 17px 40px;
+    border-radius: 7px;
     cursor: pointer;
+    /* display: inline-block;
+    position: relative; */
+
     
+}
+.cuadro{
+    text-align: left;
 }
 .button:hover{
     background-color: cadetblue;
@@ -379,6 +452,93 @@ p{
         border-radius: 2%;
     }
 }
+
+
+
+/* crear cuenta */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-image: url(../img/R.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 100px;
+}
+h1{
+    padding-top: 20px;
+    text-align: center;
+    color: #1a2537;
+    font-size: 48px;
+}
+img{
+    padding-top: 4px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+input[type="text"], input[type="password"], input[type="mail"]{
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.button{
+    border:none;
+    width: 100%;
+    font-size: 24px;
+    color: white;
+    background-color: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: cadetblue;
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600px;
+}
+.link:hover{
+    color: cadetblue;
+}
+ /* Responsive */
+@media (min-width: 768px){
+    .formulario{
+        margin-top: 150px;
+        width: 500px;
+        margin: auto;
+        border-radius: 2%;
+    }
+}
+
+
+
 
 
 /* juegos y expansiones */
