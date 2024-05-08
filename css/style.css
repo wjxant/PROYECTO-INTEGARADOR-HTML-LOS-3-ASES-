@@ -20,7 +20,7 @@ a{
     text-decoration: none;
 }
 nav{
-    background-color: gray;
+    background-color: rgb(25, 22, 51);
     color: #fff;
     /* poner en bloque y poner en horiozontal */
     display: inline-block;
