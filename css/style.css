@@ -29,8 +29,12 @@ nav{
     display: flex;
     margin: auto;
     justify-content: center;
-    z-index: 1;
+    z-index: 9999999999;
     width: 100%;
+    position: fixed;
+}
+.espacio_menu{
+    height: 150px;
 }
 li{
     /* poner en bloque y poner en horiozontal */
@@ -162,6 +166,9 @@ img{
 
 /* quienes somos */
 
+.cabeza p{
+    color: white;
+}
 
 .threeholder {
 	position: relative;
@@ -261,6 +268,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 999;
 }
 
 
@@ -385,7 +393,7 @@ puede ser p, img, videos, etc., en funcion de su posicion y los situaciones entr
 }
 .card .description p{
     margin-top: 10px;
-    text-align: justify;
+    color: #393938;
 }
 /*Modificando el boton*/
 .card .description input{
