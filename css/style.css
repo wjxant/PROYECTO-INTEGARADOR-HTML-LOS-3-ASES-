@@ -3,15 +3,20 @@
     margin: 0;
     padding: 0;
 }
+
+
+
+
+
 html, body{
-    height: 100%;
+     height: 100%; /*para que ocupe el 100% de la ventana */
 }
 body{
-    text-align: center;
+    text-align: center; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 img{
-    width: 500px;
+    width: 500px;/* ajustar el tamaño de todas las imagenes*/
     height: 500px;
 }
 
@@ -19,6 +24,7 @@ a{
     color: inherit;
     text-decoration: none;
 }
+/*contenedor del menu*/
 nav{
     background-color: rgb(25, 22, 51);
     color: #fff;
@@ -29,9 +35,9 @@ nav{
     display: flex;
     margin: auto;
     justify-content: center;
-    z-index: 9999999999;
+    z-index: 9999999999;/*coloca por encima de otrs elementos*/
     width: 100%;
-    position: fixed;
+    position: fixed;/*fija el menu */
 }
 .espacio_menu{
     height: 150px;
@@ -40,7 +46,7 @@ li{
     /* poner en bloque y poner en horiozontal */
     margin-top: -40px;
     display: inline-block;
-    /* color del txt */
+    
 }
 /* son las vistas menores de 992px */
 @media screen and (max-width: 992px) {
@@ -48,11 +54,11 @@ li{
         /* poner en bloque y poner en horiozontal */
         margin-top: -40px;
         display: block;
-        /* color del txt */
+       
     }
     .item_menu {
         padding: 1px;
-        display: none;
+        display: none; /*oculta el menu*/
         position: relative;
         top: 60px;
         right: -60%;
@@ -88,7 +94,7 @@ li{
         left: 1%;
     }
     li>div{
-        transition: none;
+        transition: none; /*elimina las transiciones*/
     }
     .videoPrincipal{
         margin-top: 65px;
@@ -124,45 +130,18 @@ li{
         margin-top: -290px;
         height: 100%;
     }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
     .threeholder {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     .three {
-        flex: 1;
-        max-width: 300px;
-        margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        overflow: hidden;
-        background-color: #fff;
-        text-align: center;
-        padding: 20px;
+        max-width: 80%;
     }
-    
-    .circlepic {
-        width: 100px;
-        height: 100px;
-        background-color: #ddd;
-        border-radius: 50%;
-        margin: 0 auto;
-    }
-    
-    .circleborder {
-        padding: 20px;
-    }
-    
+   
 }
+    
+
 /* son las vistas mayores de 992px */
 @media screen and (min-width: 992px) {
     li:hover a{
@@ -181,7 +160,7 @@ li{
         /* poner en bloque y poner en horiozontal */
         margin-top: -40px;
         display: inline-block;
-        /* color del txt */
+        
     }
     nav{
         display: inline-block;
@@ -190,21 +169,36 @@ li{
         display: none;
     }
     /* findemenu */
-
-
-    .contenido1 h2{
-        margin: 100px;
+    .container {
+        width: 60%;
     }
-    .contenido1 #bloque1{
-        margin: 100px;
+
+    .threeholder {
+        width: 100%;
+    }
+
+    .three {
+        width: 33.33%;
+    }
+
+    .circleborder {
+        position: relative;
+        display: block;
+        margin: auto;
     }
     #videoTrailer{
-        width: 100%;
-        height: 100%;
-        margin-top: -150px;
+        margin-top: -180px;
     }
+    .infoIndex{
+        margin-top: -110px;
     
+    }
+    .contenido1{
+        margin-top: 220px;
+    }
 }
+    
+
 /* li:hover>div{
     opacity: 1;
     left: -25%;
@@ -238,7 +232,7 @@ li>div>div{
 img{
     width: 50%;
     height: 50%;
-    object-fit: cover;
+    object-fit: cover;/*contendor de imagen*/
 }
 .logo_img{
     width: 55px;
@@ -274,7 +268,7 @@ img{
     background-color: red;
     padding: 15px 20px;
     border-radius: 5px;
-    cursor: pointer
+    cursor: pointer/*para que reacciones cuando el cursor ester por encima*/
 }
 #descargar:hover{
     background-color: cadetblue;
@@ -320,124 +314,54 @@ img{
 
 /* quienes somos */
 
-.cabeza p{
+.cabeza p {
     color: white;
 }
-.perfil{
-    width:100%;
-    height: 100%;
+
+.container_quiensomos{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cartas_quiessomos {
     position: relative;
-    
-   
-   } 
-.social {
-       list-style: none;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin-top: 1px; /* Reducir el margen superior */
-   }
-   
-.social li {
-       margin: 0 15px; /* Reducir el margen horizontal entre los iconos */
-   }
-   
-.socials a i {
-       font-size: 25px; /* ! Reducir el tamaño de los iconos */
-       color: #fff; 
-   }
-   
-.social a i:hover {
-       transition: all .5s ease; /* Añadir una transición suave */
-   }
-.threeholder {
-	position: relative;
-	margin: 0 auto;
-	width: 100%; /*esto es para q ocupe toda la vetana */
-	height: 400px;
-  text-align: center;
+    width: 400px;
+    height: auto;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    backdrop-filter: blur(10px); /* Fondo borroso */
+    border: 2px solid rgba(0, 255, 255, 0.6); /* Borde cian brillante */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Sombra de color cian */
+    color: white; /* Texto blanco para contraste */
+    padding: 20px; /* Espaciado interno */
 }
 
-.three {
-	display: inline-block;
-	width: 33.333333333%;
-	height: 100%;
-	transition: all 0.25s;
-	border-bottom: 15px solid;
-	
+.foto_perfil img{
+    width: 90px;
+    height: 90px;
+    margin: 20px;
 }
-
-.three {
-	background: #363636;
-	border-bottom-color: #393938;
+#redessocialesicons{
+    margin: 20px;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
 }
-
-
-
-.three:hover {
-	background: #272626; /* default for hover, can override per class if needed */
+.redessociales a{
+    margin: 10px;
+    width: 40px;
 }
+.redessociales li{
+    display: inline-block;
 
-.three:hover {
-	background: #272626;
 }
-
-
-
-.circleborder, .circlepic {
-	position: absolute;
-	border-radius: 10%;
-    z-index: 2;
-}
-
-.circleborder {
-	top: 30px;
-	width: 90px;
-	height: 90px;
-	background: #2e2e2d;
-	margin-left: 200px;
-}
-
-.circlepic {
-	top: 20px;
-	width: 110px;
-	height: 110px;
-	background: #5c5c5c;
-	margin-left: 190px;
-}
-
-.threeholder h4, .threeholder p {
-	width: 200px;
-	text-align: center;
-	margin-left: -55px; /*esto es para mover las letras*/
-	color: white;
-}
-
-.threeholder h4 {
-	font-size: 20px;
-	font-weight: bold;
-	margin-top: -70px;
-}
-
-.threeholder p {
-	font-size: 13px;
-	color: #8a8a8a;
-	margin-top: 15px;
-	letter-spacing: 1px;
-}
-
-.three:hover h4 {
-	color: rgb(242, 242, 242);
-}
-
-.three:hover svg{
-	transition: all 0.65s;
-	transform: rotateY(360deg);
-	fill: #aeada8; /* default for hover, can override per class if needed */
-}
-
-.three:hover svg {
-	fill: #858481;
+.redessociales{
+    padding-top: 30px;
+    margin: 20px;
 }
 
 
@@ -446,10 +370,10 @@ footer {
     color: #fff;
     padding: 10px 20px;
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 999;
+    margin-bottom: 1px;
 }
 
 
@@ -508,12 +432,12 @@ footer {
     position: relative;
     top: 40px;
     z-index: 1;
-    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));/*sombreado*/
     transition: all ease 400ms;
 }
 .card:hover .cover img{
     top: 0px;
-    filter: none;
+    filter: none;/*elemina los filtros del elemento*/
 }
 .card .img_back{
     width: 100%;
@@ -580,7 +504,7 @@ puede ser p, img, videos, etc., en funcion de su posicion y los situaciones entr
 .card .description input{
     padding: 10px 40px;
     margin: 20px auto 0 auto;
-    border: none;
+    border: none;/*elimina el borde*/
     display: block;
     background: #A6359D;
     color: white;
@@ -605,19 +529,7 @@ puede ser p, img, videos, etc., en funcion de su posicion y los situaciones entr
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
-     /* display: flex;  */
-    /*propiedades para alinear y ajustar mejor las cartas */
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: rgb(63, 66, 68);
-    background-image: url(fondo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
+
 .card{
     position: relative;
     width: 300px;
@@ -642,7 +554,7 @@ body{
 
 
 .card .front{
-    transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);/*para rotar las cartas*/
     box-shadow: 0px 5px 10px #000;
 }
 
@@ -661,7 +573,7 @@ body{
 .card img[alt="Personaje1"]  {
    
     background-image: url('../img/FondoPersonaje1.jpg'); 
-    background-size: cover;
+    background-size: cover;/*Para que se pongan de fondo*/
     background-position: center;
 }
 
@@ -754,7 +666,10 @@ body{
 .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
+#separadarproductos{
+    margin: 40px;
 
+}
 
 
 /* login */
@@ -806,8 +721,7 @@ input[type="text"], input[type="password"]{
     padding: 17px 40px;
     border-radius: 7px;
     cursor: pointer;
-    /* display: inline-block;
-    position: relative; */
+    
 
     
 }
@@ -913,9 +827,10 @@ p{
 
 
 main {
-    background-color: rgb(83, 80, 76);
+    background-color: rgba(83, 80, 76, 0.5); /* Fondo con transparencia */
     display: flex;
     flex-wrap: wrap;
+    backdrop-filter: blur(5px); /* Aplicar desenfoque */
 }
 
 main section {
@@ -937,13 +852,7 @@ section.images img {
 }
 
 
-
-/*PequeÃ±os resteos*/
-
-h1,
-h3,
-h4,
-p {
+h1,h3,h4,p {
     margin: 0px;
     padding: 10px;
 }
@@ -1003,4 +912,11 @@ header {
         width: 50%;
         height: auto;
     }
+    .threeholder{
+        width: 100%;
+    }
+    .three{
+        width: -33%;
+    }
+   
 }
