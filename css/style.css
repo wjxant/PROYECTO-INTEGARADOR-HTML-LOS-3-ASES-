@@ -196,6 +196,9 @@ li{
     .contenido1{
         margin-top: 220px;
     }
+    .formulario {
+        margin-top: 400px;
+    }
 }
     
 
@@ -682,7 +685,7 @@ puede ser p, img, videos, etc., en funcion de su posicion y los situaciones entr
 /* para el login y crear cuenta */
 .formulario{
     /* borroso  */
-    margin-top: 400px;
+
     border-radius: 20px;
     backdrop-filter: blur(5px);/*no hace efecto borroso*/
     opacity: 0.99;
