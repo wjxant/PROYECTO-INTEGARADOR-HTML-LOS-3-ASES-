@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="shortcut icon" href="icon/Logo3ASES.png" type="image/x-icon"><!--agregar logo mediante link:favicon-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Los 3 Ases</title>
 </head>
 
@@ -13,33 +16,56 @@
     <!-- INICIO DE MENU -->
     <nav>
         <ul>
-            <li>
+            <li class="cantenerdor_logo">
                 <a href="index.html" class="uno">
                     <img class="logo_img" src="icon/logoblanco.png" alt="">
                 </a>
             </li>
-            <li>
-                <a href="quines_somos.html">Quienes Somos</a>
+
+            
+            <li class="menu">
+                <div class="iconmenu"><i class="fa fa-bars" style="font-size:24px"></i></div>
             </li>
-            <li>
+            <li class="titulo">
+                <h1>LOS 3 ASES</h1>
+            </li>
+            
+            <li class="item_menu">
+                <a href="quines_somos.html" >Quienes Somos</a>
+            </li>
+            <li class="item_menu">
                 <a href="Juegos_Expansiones.html">Juegos / Expansiones</a>
 
             </li>
-            <li>
-                <a href="Productos.html">Productos</a>
+            <li class="item_menu">
+                <a href="Productos.html" >Productos</a>
 
             </li>
-            <li>
-                <a href="Personaje.html">Personajes</a>
+            <li class="item_menu">
+                <a href="Personaje.html" >Personajes</a>
 
             </li>
-            <li>
-                <a href="login.html">Área de clientes</a>
+            <li class="item_menu">
+                <a href="login.html" >Área de clientes</a>
 
             </li>
 
         </ul>
     </nav>
+    <script>
+        $(function(){
+            //Captura del evento para mostrar u ocultar el menu
+            $(".iconmenu").click(function(){
+                $(".item_menu").toggle();
+        });
+        $(window).resize(function(){
+             var anchura =$(this).width();
+             if (anchura > 993) {
+                $(".item_menu").show();
+             }
+        });
+        });
+    </script>
     <!-- FIN DE MENU -->
     <div class="espacio_menu"></div>
     <!-- INICIO DE  CONTENIDO-->
@@ -52,37 +78,42 @@
         </video>
         <div class="infoIndex">
             <div class="txtVideo">
-                <h1>Bienvenidos a Los 3 Ases</h1>
+                <h1 id="bienvenidos">Bienvenidos a Los 3 Ases</h1>
                 <h2>Descarga para unir Al Mundo</h2>
             </div>
             <div class="descargar">
-                <a href="CrearCuenta.html" id="descargar">DESCARGAR</a>
+                <a href="login.html" id="descargar">DESCARGAR</a>
                 <a href="CrearCuenta.html" class="button">REGÍSTRAR</a>
             </div>
         </div>
 
-
+</div>
         <div class="contenido1">
             <br>
-            <h2>Descripción</h2>
+            <h2 id="descripcion">Descripción</h2>
             <div id="separador"></div>
             <div id="bloque1">
                 <p class="text">
-                    Los 3 Ases es un emocionante shooter de alto riesgo en primera persona para JcJcE. Elimina monstruos
-                    de pesadilla, mientras compites por las recompensas que te llevarán a alcanzar la gloria, el equipo
-                    y el oro en esta experiencia multijugador online implacable e inolvidable.
-                    <br>Corre el año 1895, y eres un Cazador con la misión de eliminar a los salvajes monstruos de
-                    pesadilla que han infestado el Pantano de Louisiana. Juega en solitario o en equipos de dos o tres,
-                    mientras buscas pistas que te ayuden a rastrear a tu objetivo y compite con otros Cazadores que
-                    buscan la misma recompensa. Mata y destierra a tu objetivo, recoge la recompensa, y entonces
-                    prepárate para las confrontaciones: una vez que la recompensa esté en tus manos, todos los demás
-                    Cazadores del mapa querrán tu premio. No muestres piedad mientras luchas en un mundo despiadado y
-                    oscuro con armas brutales inspiradas en la época, mientras subes de nivel, desbloqueas equipo y
-                    recoges experiencia y oro para tu Línea de Sangre.
+                    <p class="text">
+                        Los 3 Ases es un emocionante shooter de alto riesgo en primera persona para JcJcE. Elimina monstruos
+                        de pesadilla, mientras compites por las recompensas que te llevarán a alcanzar la gloria, el equipo
+                        y el oro en esta experiencia multijugador online implacable e inolvidable.
+                    </p>
+                   <p  class="text" id="infoExtra">
+                        Corre el año 1895, y eres un Cazador con la misión de eliminar a los salvajes monstruos de
+                        pesadilla que han infestado el Pantano de Louisiana. Juega en solitario o en equipos de dos o tres,
+                        mientras buscas pistas que te ayuden a rastrear a tu objetivo y compite con otros Cazadores que
+                        buscan la misma recompensa. Mata y destierra a tu objetivo, recoge la recompensa, y entonces
+                        prepárate para las confrontaciones: una vez que la recompensa esté en tus manos, todos los demás
+                        Cazadores del mapa querrán tu premio. No muestres piedad mientras luchas en un mundo despiadado y
+                        oscuro con armas brutales inspiradas en la época, mientras subes de nivel, desbloqueas equipo y
+                        recoges experiencia y oro para tu Línea de Sangre.
+                   </p>
+                    
                 </p>
             </div>
         </div>
-    </div>
+    
     <footer>
         <p>Derechos de autor &copy; 2024 Nuestra Empresa</p>
     </footer>

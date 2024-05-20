@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="icon/Logo3ASES.png" type="image/x-icon"><!--agregar logo mediante link:favicon-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .card .description{
             height: 350px;
@@ -15,6 +17,13 @@
         .description h2{
             height: 50px;
         }
+        body{
+            background-image: url(img/login-logo.png);
+            background-size: 100%;
+            background-attachment: fixed;
+            background-repeat: repeat;
+            color: white;
+        }
     </style>
     <title>Productos</title>
 </head>
@@ -22,33 +31,56 @@
     <!-- INICIO DE MENU -->
     <nav>
         <ul>
-            <li>
-                <a href="index.html">
+            <li class="cantenerdor_logo">
+                <a href="index.html" class="uno">
                     <img class="logo_img" src="icon/logoblanco.png" alt="">
                 </a>
             </li>
-            <li>
-                <a href="quines_somos.html">Quienes Somos</a>
-                
+
+            
+            <li class="menu">
+                <div class="iconmenu"><i class="fa fa-bars" style="font-size:24px"></i></div>
             </li>
-            <li>
+            <li class="titulo">
+                <h1>LOS 3 ASES</h1>
+            </li>
+            
+            <li class="item_menu">
+                <a href="quines_somos.html" >Quienes Somos</a>
+            </li>
+            <li class="item_menu">
                 <a href="Juegos_Expansiones.html">Juegos / Expansiones</a>
-              
+
             </li>
-            <li>
-                <a href="Productos.html">Productos</a>
-                
+            <li class="item_menu">
+                <a href="Productos.html" >Productos</a>
+
             </li>
-            <li>
-                <a href="Personaje.html">Personajes</a>
-                
+            <li class="item_menu">
+                <a href="Personaje.html" >Personajes</a>
+
             </li>
-            <li>
-                <a href="login.html">Área de clientes</a>
-                
+            <li class="item_menu">
+                <a href="login.html" >Área de clientes</a>
+
             </li>
+
         </ul>
     </nav>
+    <script>
+        $(function(){
+            //Captura del evento para mostrar u ocultar el menu
+            $(".iconmenu").click(function(){
+                $(".item_menu").toggle();
+        });
+        $(window).resize(function(){
+             var anchura =$(this).width();
+             if (anchura > 993) {
+                $(".item_menu").show();
+             }
+        });
+        });
+    </script>
     <div class="espacio_menu"></div>
 
     <h1 class="titulo_producto">Productos</h1>

@@ -25,7 +25,7 @@ nav{
     /* poner en bloque y poner en horiozontal */
     display: inline-block;
     position: relative;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 0px 0px;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -42,17 +42,175 @@ li{
     display: inline-block;
     /* color del txt */
 }
-li:hover>div{
+/* son las vistas menores de 992px */
+@media screen and (max-width: 992px) {
+    li{
+        /* poner en bloque y poner en horiozontal */
+        margin-top: -40px;
+        display: block;
+        /* color del txt */
+    }
+    .item_menu {
+        padding: 1px;
+        display: none;
+        position: relative;
+        top: 60px;
+        right: -60%;
+        backdrop-filter: blur(10px); /* Aplicar desenfoque al fondo */
+        border-radius: 0px 0px 20px 20px;
+    }
+    nav{
+        height: 100px;
+    }
+    
+    li:hover a{
+        background-color: none;
+        position: relative;
+        
+    }
+    .titulo h1{
+        z-index: 9999999999;
+        margin-top: 66px;
+        font-size: 25px;
+        text-align: center;
+        
+    }
+   
+    .menu{
+        display: inline-block;
+        z-index: 9999999;
+        position: absolute;
+        right: 10%;
+        top: 20px;
+    }
+    .cantenerdor_logo{
+        position: absolute;
+        left: 1%;
+    }
+    li>div{
+        transition: none;
+    }
+    .videoPrincipal{
+        margin-top: 65px;
+    }
+    .infoIndex{
+        margin-top: -200px;
+    }
+    .contenido1{
+        margin-top: -px;
+    }
+    .txtVideo{
+        margin-top: 16em;
+    }
+    #bienvenidos{
+        font-size: 50px;
+    }
+    #infoExtra{
+        display: none;
+    }
+    .videoPrincipal{
+        height: 100%;
+    }
+    #videoTrailer{
+        margin-top: -1555px;
+    }
+    .contenido1 h2{
+        margin: 10px;
+    }
+    .contenido1 #bloque1{
+        margin: 10px;
+    }
+    #videoTrailer{
+        margin-top: -290px;
+        height: 100%;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .threeholder {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .three {
+        flex: 1;
+        max-width: 300px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .circlepic {
+        width: 100px;
+        height: 100px;
+        background-color: #ddd;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    
+    .circleborder {
+        padding: 20px;
+    }
+    
+}
+/* son las vistas mayores de 992px */
+@media screen and (min-width: 992px) {
+    li:hover a{
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        position: relative;
+    }
+    nav li a {
+        display: inline-block;
+        padding: 40px;
+    }
+    .titulo{
+        display: none;
+    }
+    li{
+        /* poner en bloque y poner en horiozontal */
+        margin-top: -40px;
+        display: inline-block;
+        /* color del txt */
+    }
+    nav{
+        display: inline-block;
+    }
+    .iconmenu{
+        display: none;
+    }
+    /* findemenu */
+
+
+    .contenido1 h2{
+        margin: 100px;
+    }
+    .contenido1 #bloque1{
+        margin: 100px;
+    }
+    #videoTrailer{
+        width: 100%;
+        height: 100%;
+        margin-top: -150px;
+    }
+    
+}
+/* li:hover>div{
     opacity: 1;
     left: -25%;
     z-index: 1;
-}
-li:hover a{
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    position: relative;
-    
-}
+} */
+
 nav li a{
     display: inline-block;
     padding: 40px;
@@ -63,7 +221,7 @@ li>div{
     left: -50px;
     width: 150%;
     padding: 60px 0;
-    opacity: 0;
+    /* opacity: 0; */
     z-index: -1;
 }
 li>div>div{
@@ -89,6 +247,10 @@ img{
     top: 20px;
     border-radius: 20px;
 }
+#videoTrailer{
+   
+    z-index: -999;
+}
 /* FIN DE MENU  */
 
 /* INDEX */
@@ -96,13 +258,7 @@ img{
 
 
 
-#videoTrailer{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    margin-top: -150px;
-    z-index: -999;
-}
+
 .txtVideo h1{
     color: white;
     font-size: 80px;
@@ -128,7 +284,7 @@ img{
 }
 .infoIndex{
     position: relative;
-    top: -600px;
+    bottom: 600px;
 }
 .contenido1{
     position: relative;
@@ -138,10 +294,10 @@ img{
     height: auto;
     padding: 40px;
     background-color: rgb(0, 0, 0);
-    border-radius: 20px 20px;
+    border-radius: 0px 0px;
 }
 .contenido1 h2{
-    margin: 100px;
+    /* margin: 100px; */
     color: white;
     font-size: 60px;
     text-align: left;
@@ -160,16 +316,40 @@ img{
     font-size: 20px;
     text-align: justify;
 }
-.contenido1 #bloque1{
-    margin: 100px;
-}
+
 
 /* quienes somos */
 
 .cabeza p{
     color: white;
 }
-
+.perfil{
+    width:100%;
+    height: 100%;
+    position: relative;
+    
+   
+   } 
+.social {
+       list-style: none;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 1px; /* Reducir el margen superior */
+   }
+   
+.social li {
+       margin: 0 15px; /* Reducir el margen horizontal entre los iconos */
+   }
+   
+.socials a i {
+       font-size: 25px; /* ! Reducir el tamaño de los iconos */
+       color: #fff; 
+   }
+   
+.social a i:hover {
+       transition: all .5s ease; /* Añadir una transición suave */
+   }
 .threeholder {
 	position: relative;
 	margin: 0 auto;
@@ -206,7 +386,8 @@ img{
 
 .circleborder, .circlepic {
 	position: absolute;
-	border-radius: 50%;
+	border-radius: 10%;
+    z-index: 2;
 }
 
 .circleborder {
@@ -233,15 +414,15 @@ img{
 }
 
 .threeholder h4 {
-	font-size: 13px;
+	font-size: 20px;
 	font-weight: bold;
-	margin-top: 45px;
+	margin-top: -70px;
 }
 
 .threeholder p {
-	font-size: 12px;
+	font-size: 13px;
 	color: #8a8a8a;
-	margin-top: 20px;
+	margin-top: 15px;
 	letter-spacing: 1px;
 }
 
