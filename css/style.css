@@ -131,7 +131,6 @@ li{
         margin-top: -290px;
         height: 100%;
         width: -webkit-fill-available;
-
     }
     .threeholder {
         flex-direction: column;
@@ -202,6 +201,9 @@ li{
     }
     .formulario {
         margin-top: 400px;
+    }
+    .txtVideo{
+        margin-top: 16em;
     }
 }
     
