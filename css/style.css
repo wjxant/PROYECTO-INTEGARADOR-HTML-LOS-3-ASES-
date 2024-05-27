@@ -119,6 +119,7 @@ li{
     }
     #videoTrailer{
         margin-top: -1555px;
+
     }
     .contenido1 h2{
         margin: 10px;
@@ -129,6 +130,8 @@ li{
     #videoTrailer{
         margin-top: -290px;
         height: 100%;
+        width: -webkit-fill-available;
+
     }
     .threeholder {
         flex-direction: column;
@@ -188,6 +191,7 @@ li{
     }
     #videoTrailer{
         margin-top: -180px;
+        width: -webkit-fill-available;
     }
     .infoIndex{
         margin-top: -110px;
